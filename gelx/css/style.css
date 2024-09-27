@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+.header-title{
+    display: flex;
+    margin: auto;
+}
+.logo img{
+    height: 100px;
+    padding-right: 30px;
+}
+.wyszukiwarka{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.wyszukiwarka-input{
+    min-width: 300px;
+    font-size: 15px;
+    padding-left: 5px;
+    height: 30px;
+    border: 1px black solid;
+    column-span: 2;
+    margin-right: -1px;
+    margin-left: 150px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.wyszukiwarka-input:hover{
+    height: 35px;
+    transition-duration: 0.1s;
+}
+.wyszukiwarka-lupa{
+    display: flex;
+    height: 40px;
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+.wyszukiwarka-lupa:hover{
+    height: 43px;
+    transition-duration: 0.3s;
+}
+.koszyk{
+    display: flex;
+}
+.koszyk img{
+    display: flex;
+    height: 80px;
+}
+.koszyk-napis{ 
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.koszyk-napis:hover{ 
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+.koszyk-napis p{
+    margin-top: 25px;
+    border: none;
+    color: white;
+}
+nav p{
+    background-color: skyblue;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 15px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+nav p:hover{
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+main{
+    /* border: 10px solid red; */
+    margin-top: 40px;
+    max-width: 100%;
+    height: 1000px;
+}
+.tytul-wszystkie-produkty{
+    text-align: center;
+    margin-top: 30px;
+}
+aside{
+    /* border: 1px solid rgb(187, 187, 187); */
+    display: block;
+    width: 200px;
+    min-height: 250px;
+}
+.kategorie-po-lewej h1{
+    text-align: center;
+    padding-top: 8px;
+    background-color: skyblue;
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    height: 50px;
+}
+.kategorie-po-lewej{
+    height: 400px;
+    width: 15%;
+    float: left;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+.kategorie-po-lewej button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    padding-right: 5px;
+    height: 117px;
+    width: 100%;
+}
+.kategorie-po-lewej a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background: none;
+}
+.kategorie-po-lewej button:hover{
+    background-color: skyblue;
+    transition-duration: 0.5s;
+}
+.kategorie-po-lewej p:hover{
+    font-size: 21px;
+    transition-duration: 0.5s;
+}
+.produkty-strona-glowna{
+    /* background-color: red; */
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* border: 3px solid rgb(216, 216, 216); */
+}
+.produkty-strona-glowna-zdjecie{
+    height: 211px;
+    width: 345px;
+}
+.produkty-strona-glowna-zdjecie img{
+    height: 200px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 22px;
+    margin-right: 22px;
+    float: left;
+}
+.produkty-strona-glowna-zdjecie img:hover{
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    box-shadow: 15px 15px 10px rgba(187, 187, 187, 0.8);
+    transition-duration: 0.5s;
+}
+.cos-bedzie-po-prawej{
+    width: 15%;
+    height: 150px;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    float: left;
+}
+.produkty-strona-glowna-maksymalna-wielkosc{
+    height: 400px;
+    width: 350px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    float: left;
+}
+.produkty-strona-glowna-maksymalna-wielkosc:hover{
+    background-color: rgb(255, 248, 248);
+}
+.produkty-strona-glowna-cena{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+.produkty-strona-glowna-dodaj-do-koszyka{
+    /* border: 1px solid black; */
+    text-align: center;
+    height: 50px;
+    width: 230px;
+    background-color: white;
+    margin-top: 13px;
+    margin-left: 58px;
+    margin-right: 58px;
+    border-radius: 25px;
+}
+.produkty-strona-glowna-dodaj-do-koszyka:hover{
+    transition-delay: 0.5;
+    font-size: 26px;
+    -moz-transform: scale(1.03) ;
+    -o-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    background-color: skyblue;
+}
+.produkty-strona-glowna-dodaj-do-koszyka button{
+    font-size: 25px;
+    width: 230px;
+    height: 50px;
+    border: none;
+    background: none;
+}
+.produkty-strona-glowna-obramowka{
+    height: 400px;
+    width: 350px;
+    border: 3px solid rgb(216, 216, 216);
+}
+.produkty-strona-glowna-tytul{
+    height: 70px;
+    width: 345px;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.produkty-strona-glowna-tytul span{
+    font-size: 25px;
+    word-wrap: normal;
+}
+.srodek-gelx{
+    clear: both;
+    height: 1000px;
+    background-color: gray;
+}
+.srodek-gelx-cala-lewa-strona{
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+}
+.srodek-glx-cala-lewa-strona-opis{
+    margin-top: 150px;
+    float: left;
+}
+.srodek-glx-cala-lewa-strona-opis img{
+    height: 600px;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 300px;
+    float: left;
+}
+.srodek-glx-cala-lewa-strona-opis p{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 135px;
+}
+.srodek-glx-cala-lewa-strona-opis h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+.srodek-glx-cala-lewa-strona-opis-tekst{
+    height: 300px;
+}
+.srodek-glx-cala-lewa-strona-opis-przycisk{
+    float: left;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 6px;
+    text-align: center;
+}
+.srodek-glx-cala-lewa-strona-opis-przycisk:hover{
+    background-color: skyblue;
+}
+.srodek-glx-cala-lewa-strona-opis-przycisk a{
+    height: 40px;
+    width: 400px;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.srodek-glx-cala-lewa-strona-opis-przycisk a:hover{
+    font-size: 21px;
+}
+.produkt-jednorazowki-aroma-king{
+    float: left;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+.produkt-jednorazowki-aroma-king-tytul{
+    color: black;
+    background-color: rgb(236, 236, 236);
+    border-bottom: 5px rgb(161, 161, 161) solid;
+    height: 150px;
+    font-size: 20px;
+    text-align: start;
+    padding-top: 45px;
+}
+.produkt-jednorazowki-aroma-king-lewy-blok-galeria{
+    height: 650px;
+    width: 1200px;
+    margin-left: 300px;
+    margin-top: 0px;
+    background-color: rgb(233, 233, 233);
+    float: left;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie{
+    height: 500px;
+    width: 800px;
+    background-color: red;
+    margin-top: 0px;
+    float: left;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-lewo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: left;
+    margin-top: 200px;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-lewo img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    background-color: white;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-srodek{
+    height: 500px;
+    width: 600px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-srodek img{
+    height: 450px;
+    width: 600px;
+    margin-top: 25px;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-prawo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: right;
+    margin-top: 200px;
+    margin-right: 0px;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie-prawo img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    background-color: white;
+}
+.produkt-jednorazowki-aroma-king-blok-zdjecie-zdjecie button{
+    border: none;
+    background-color: none;
+}
+.produkt-jednorazowki-aroma-king-prawa-strona{
+    background-color: yellow;
+    float: left;
+    height: 500px;
+    width: 350px;
+    margin-left: 50px;
+
+}
+.produkt-jednorazowki-aroma-king-prawa-strona-cena{
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 3px black solid;
+}
+.produkt-jednorazowki-aroma-king-prawa-strona-smaki{
+    height: 435px;
+    width: 350px;
+    background-color: pink;
+    text-align: center;
+    padding-top: 30px;
+}
+.produkt-jednorazowki-aroma-king-prawa-strona-smaki-tytul{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.produkt-jednorazowki-aroma-king-prawa-strona-smaki-wybor{
+    height: 50px;
+    font-size: 30px;
+    background-color: skyblue;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-con" href="./zdjecia/logo.png">
+    <title>Koszyk - GelX</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wyszukiwarka">
+            <div class="logo">
+                <a href="stronaglowna.html">
+                    <img src="zdjecia/logo.png" alt="logo">
+                  </a>
+            </div>
+             <input type="text" class="wyszukiwarka-input"
+            placeholder="Wyszukaj produktu" autocomplete="off">
+                    <div class="wyszukiwarka-lupa">
+                        <img src="zdjecia/lupa.png" alt="wyszukiwarka-lupa">
+                    </div>
+        </div>
+        <div class="koszyk">
+            <a href="koszyk.html" class="koszyk-napis">
+             <img src="zdjecia/koszyk.png" alt="koszyk">
+                <p class="koszyk-napis">KOSZYK</p>
+            </a> 
+          </div>
+    </header>
+        <nav>
+            <p>PRZED ZAMÓWIENIEM PROSZĘ O PRZECZYTANIE WAŻNYCH INFORMACJI NA DOLE STRONY</p>
+        </nav>
+   <main>
+        <h2>Produkty w koszyku:</h2>
+        <ul id="cart-items"></ul>
+
+        <h3>Łączna kwota: <span id="total-price">0</span> zł</h3>
+    </main>
+    <footer>
+        <a href="stronaglowna.html">Powrót do sklepu</a>
+    </footer>
+    <script src="koszyk.js"></script>
+</body>
+</html>
